@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Form in table</title>
+    </head>
+    <body>
+        <form >
+            <table border="2">
+                <div>
+                <caption><b>Registration Form</b></caption><br>
+                <tr>
+                      <th><label>Enter Username</label><br></th>
+                       <th><input type="text" name="name" required placeholder="Enter Name" maxlength="10"><br></th>
+                    
+                </tr>
+            </div>
+            <div>
+            <tr>
+              <th><label>Enter Password</label><br></th>
+              <th><input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                 title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" 
+                 placeholder="Enter Password" required><br></th>
+            </tr>
+              </div>
+              <div>
+                  <tr>
+                      <th><label>Enter Email</label></th>
+                     <th><input type="email" name="email" placeholder="Enter Email" reuired></th>
+                  </tr>
+              </div>
+              <div>
+                <tr>
+                    <th><label>Date of Birth</label></th>
+                    <th><input type="date" name="date" required></th>
+                </tr>
+                </div>
+                <div>
+                    <tr>
+                        <th><label>Age</label></th>
+                        <th><input type="number" name="age" min="18" max="60" placeholder="Age" required></th>
+                    </tr>
+                </div>
+              <div>
+
+                  <tr>
+                      <th><label>Gender</label></th> 
+                      <th><input type="radio" name="gender" checked required>Male
+                      <input type="radio" name="gender" >Female
+                      <input type="radio" name="gender" >Transgender</th>              
+                  </tr>
+              </div>
+               
+                <div>
+                    <tr>
+                        <th><label>Streaming App</label></th>
+                        <th><input type="checkbox" name="checkBox" checked>Amazon
+                            <input type="checkbox" name="checkBox">Netflix
+                            <input type="checkbox"name="checkBox">Hotstar</th>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <th><label>Subscription</label></th>
+                        <th><select name="subs">
+                        <option value="unpaid" required>Unpaid</option>
+                        <option value="paid" required>Paid</option></th>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                       <th><label>File Upload</label></th>
+                       <th><input type="file" name="fileUpload" required></th>
+                   </tr>
+                </div>
+                <div>
+                    <tr>
+                   <th><label>Address</label></th>
+                  <th><textarea rows="4" cols="25" required></textarea></th>
+                    </tr>
+                 </div>
+                <div>
+                 <tr>
+                    <th><input type="none" name="none">
+                    <th><input type="submit" name="submit">
+                    <input type="reset" name="reset"></th>
+                 </tr>
+                </div>
+                <div>
+                    <tr>
+                        <th><label>Video</label></th>
+                        <th><video width="300" height="200" controls>
+                            <source src="img/foo.mp4" type="video/mp4" />
+
+                        </video></th>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <th><label>Audio</label></th>
+                        <th><audio controls>
+                        <source src="img/mixkit-stadium-crowd-light-applause-362.wav" type="audio/wav"/>
+
+
+                        </audio></th>
+                    </tr>
+                </div>
+                <div>
+                    <tr>
+                        <th><label>Youtube Video</label></th>
+                        <th><iframe width="420" height="315"
+                            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                            </iframe></th>
+                    </tr>
+                </div>
+        
+            </table>
+        </form>
+    </body>
+</html>

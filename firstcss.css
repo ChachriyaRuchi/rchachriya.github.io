@@ -1,0 +1,22 @@
+/* element type selector */
+h2{
+    color:yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style:unset;
+}
+/* group selector */
+h1,h2,h3,h4,div{
+    font-size: 50px;
+}
+/* class selector */
+.inline{
+    text-decoration:underline;
+    text-transform: uppercase;
+
+}
+/* id selector */
+#google{
+    background-color:steelblue;
+    color: violet;
+    height: 100px;
+}
